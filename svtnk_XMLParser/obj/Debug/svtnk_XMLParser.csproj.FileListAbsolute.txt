@@ -12,3 +12,4 @@ D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.Properties.Res
 D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.csproj.GenerateResource.Cache
 D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.exe
 D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.pdb
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser_Content.g.cs

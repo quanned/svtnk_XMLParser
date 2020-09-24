@@ -61,6 +61,8 @@ namespace svtnk_XMLParser {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("resource/parse.ico");
+            splashScreen.Show(true);
             svtnk_XMLParser.App app = new svtnk_XMLParser.App();
             app.InitializeComponent();
             app.Run();

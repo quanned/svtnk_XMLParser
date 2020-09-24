@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:svtnk_XMLParser"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="725" MinWidth="525" MinHeight="350">
+        Title="MainWindow" Height="550" Width="725" MinWidth="525" MinHeight="350" WindowStartupLocation="CenterScreen" Icon="parse.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="67*"/>

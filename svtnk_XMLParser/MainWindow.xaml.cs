@@ -83,14 +83,27 @@ namespace svtnk_XMLParser
                 //Выводим имя элемента и значение аттрибута id
                 MainTB.Text += el.Name + " \n";
                 //Console.WriteLine("{0} {1}", el.Name, el.Attribute("id").Value);
-                MainTB.Text += "  Attributes:\n";
+                MainTB.Text += "   Attributes:\n";
                 //выводим в цикле все аттрибуты, заодно смотрим как они себя преобразуют в строку
                 foreach (XAttribute attr in el.Attributes())
-                    MainTB.Text += attr.Name + " : " + attr.Value + " \n";
-                MainTB.Text += "  Elements:\n";
+                    MainTB.Text += "        " + attr.Name + " : " + attr.Value + " \n";
+
+                MainTB.Text += "   Elements:\n";
                 //выводим в цикле названия всех дочерних элементов и их значения
                 foreach (XElement element in el.Elements())
-                    MainTB.Text += element.Name + " : " + element.Value + " \n";
+                    MainTB.Text += "   " + element.Name + " : " + element.Value + " \n";
+
+                MainTB.Text += "   ElementsV2:\n";
+                foreach (XElement element2 in el.Elements().Elements())
+                    MainTB.Text += "      " + element2.Name + " : " + element2.Value + " \n";
+
+                MainTB.Text += "   ElementsV3:\n";
+                foreach (XElement element3 in el.Elements().Elements().Elements())
+                    MainTB.Text += "         " + element3.Name + " : " + element3.Value + " \n";
+
+                MainTB.Text += "   ElementsV4:\n";
+                foreach (XElement element4 in el.Elements().Elements().Elements().Elements())
+                    MainTB.Text += "            " + element4.Name + " : " + element4.Value + " \n";
             }
 
             #region backup
