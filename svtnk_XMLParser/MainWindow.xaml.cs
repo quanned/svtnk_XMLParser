@@ -41,15 +41,21 @@ namespace svtnk_XMLParser
             string pathToXmls = @"J:\XML\OUT";
             string path = GetFullPathToFolder();
 
-            if (path.StartsWith(pathToXmls))
+            string[] FilesPathArray = Directory.GetFiles(PathEdit.Text);
+            for (int i = 0; i < FilesPathArray.Length; i++)
             {
-                string[] FilesPathArray = Directory.GetFiles(PathEdit.Text);
-                for (int i = 0; i < FilesPathArray.Length; i++)
-                {
-                    FilesLB.Items.Add(FilesPathArray[i]);
-                }
+                FilesLB.Items.Add(FilesPathArray[i]);
             }
-            else System.Windows.MessageBox.Show("Chech path to files plese");
+
+            //if (path.StartsWith(pathToXmls))
+            //{
+            //    string[] FilesPathArray = Directory.GetFiles(PathEdit.Text);
+            //    for (int i = 0; i < FilesPathArray.Length; i++)
+            //    {
+            //        FilesLB.Items.Add(FilesPathArray[i]);
+            //    }
+            //}
+            //else System.Windows.MessageBox.Show("Chech path to files plese");
         }
 
         public string GetFullPathToFolder() //возвращает полный путь к папке
@@ -75,16 +81,16 @@ namespace svtnk_XMLParser
             foreach (XElement el in doc.Root.Elements())
             {
                 //Выводим имя элемента и значение аттрибута id
-                MainTB.Text += el.Name + "\n";
+                MainTB.Text += el.Name + " \n";
                 //Console.WriteLine("{0} {1}", el.Name, el.Attribute("id").Value);
                 MainTB.Text += "  Attributes:\n";
                 //выводим в цикле все аттрибуты, заодно смотрим как они себя преобразуют в строку
                 foreach (XAttribute attr in el.Attributes())
-                    MainTB.Text += attr;
+                    MainTB.Text += attr.Name + " : " + attr.Value + " \n";
                 MainTB.Text += "  Elements:\n";
                 //выводим в цикле названия всех дочерних элементов и их значения
                 foreach (XElement element in el.Elements())
-                    MainTB.Text += element.Name + " : " + element.Value + "\n";
+                    MainTB.Text += element.Name + " : " + element.Value + " \n";
             }
 
             #region backup
