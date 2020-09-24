@@ -1,0 +1,14 @@
+D:\work\svtnk_XMLParser\svtnk_XMLParser\bin\Debug\svtnk_XMLParser.exe.config
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.csprojResolveAssemblyReference.cache
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\MainWindow.g.cs
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\App.g.cs
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser_MarkupCompile.cache
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser_MarkupCompile.lref
+D:\work\svtnk_XMLParser\svtnk_XMLParser\bin\Debug\svtnk_XMLParser.exe
+D:\work\svtnk_XMLParser\svtnk_XMLParser\bin\Debug\svtnk_XMLParser.pdb
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\MainWindow.baml
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.g.resources
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.Properties.Resources.resources
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.csproj.GenerateResource.Cache
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.exe
+D:\work\svtnk_XMLParser\svtnk_XMLParser\obj\Debug\svtnk_XMLParser.pdb
