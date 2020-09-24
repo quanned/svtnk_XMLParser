@@ -7,15 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="725" MinWidth="525" MinHeight="350">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="453*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="151*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="OpenBtn" Content="Open folder" Margin="10,38,9,0" VerticalAlignment="Top" Click="OpenBtn_Click" Height="22"/>
         <TextBox x:Name="PathEdit" Height="23" Margin="10,10,9,0" TextWrapping="Wrap" Text="Path to file" VerticalAlignment="Top" MouseLeftButtonUp="PathEdit_MouseLeftButtonUp"/>
-        <ListBox x:Name="FilesLB" Margin="10,96,10,10"/>
-        <Label Content="Files list:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
-        <Button x:Name="ParseBtn" Content="Parse file" Grid.Column="1" Margin="10,10,10,0" VerticalAlignment="Top" Click="ParseBtn_Click"/>
-        <TextBox x:Name="SecondTB" Grid.Column="1" Margin="10,96,10,10" TextWrapping="Wrap"/>
+        <ListBox x:Name="FilesLB" Margin="10,29,10,10" Grid.Row="1"/>
+        <Label Content="Files list:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="120" Height="26" Grid.RowSpan="2"/>
+        <Button x:Name="ParseBtn" Content="Parse file" Grid.Column="1" Margin="10,10,10,0" VerticalAlignment="Top" Click="ParseBtn_Click" Height="22"/>
+        <TextBox x:Name="MainTB" Grid.Column="1" Margin="10,29,10,183" TextWrapping="Wrap" MaxLength="2147483647" Grid.Row="1"/>
+        <TextBox x:Name="SecondTB" Grid.Column="1" Margin="10,0,10,10" TextWrapping="Wrap" Height="157" VerticalAlignment="Bottom" MaxLength="2147483647" Grid.Row="1"/>
     </Grid>
 </Window>
